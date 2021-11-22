@@ -5,11 +5,15 @@ body{
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
     width: 100%;
     min-height: 10vh ;
     display: flex;
     align-items: center;
     font-size: larger;
+    background-color: white;
+    z-index: 1;
     font-family: 'Poppins', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.294) 0px 1px 2px 0px;
 }
@@ -25,7 +29,7 @@ body{
     width: 50vw;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin: 9vh auto;
+    margin: 18vh auto 5vh auto;
     display: flex;
     flex-direction: row;
 }
@@ -37,6 +41,7 @@ body{
 }
 
 .profile{
+    position: relative;
     width: 40%;
     display: flex;
     border-top-left-radius: 15px ;
@@ -46,7 +51,7 @@ body{
 }
 .profile img{
     margin: 10px auto;
-    width: 70%;
+    width: 55%;
     border-radius: 50% ;
     border: solid rgb(144, 144, 144) thin;
 }
@@ -75,6 +80,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 .social-links a{
     color: black;
@@ -98,6 +106,9 @@ body{
 .links{
     margin-top: 5vh;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 #resume-link{
     border: solid rgba(0, 0, 255, 0.514) 2px;
@@ -117,15 +128,16 @@ body{
     color: rgba(0, 0, 255, 0.514);
 }
 #projects-link{
-    border: solid black 2px;
-    border-radius: 25px ;
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 25px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: black;
     font-weight: 500;
     padding: 5px 20px;
-    transition: 400ms;
+    transition: 300ms;
+    margin: 10px;
 }
 #projects-link:hover{
     border: solid rgba(0, 0, 255, 0.514) 2px;
@@ -133,9 +145,42 @@ body{
     color: white;
 }
 .about-me{
-    margin: 50px 20px 0px 20px;
+    margin: 30px;
     font-family: 'Poppins', sans-serif;
     line-height: 20px;
     font-size: 15px;
     text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+    #app{
+        font-size: 28px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .links{
+        flex-direction: column;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+        flex-direction: column;
+    }
+    .profile{
+        width: 100%;
+        border-top-right-radius: 15px;
+    }
+    .content{
+        width: 100%;
+    }
+    .links{
+        width: 50%;
+        align-self: center;
+    }
 }
