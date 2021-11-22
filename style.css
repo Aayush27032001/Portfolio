@@ -125,7 +125,7 @@ body{
 }
 #resume-link:hover{
     background-color: white;
-    color: rgba(0, 0, 255, 0.514);
+    color: blue;
 }
 #projects-link{
     border: solid rgb(0, 0, 0) 2px;
