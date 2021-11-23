@@ -83,13 +83,13 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0;
+    margin: 0px 15px;
 }
 .social-links a{
     color: black;
 }
 .fa-linkedin-in,.fa-github,.fa-twitter{
     font-size: 25px;
-    margin: 0px 15px;
 }
 .content{
     width: 60%;
