@@ -86,10 +86,10 @@ body{
 }
 .social-links a{
     color: black;
+    margin: 0px 15px;
 }
 .fa-linkedin-in,.fa-github,.fa-twitter{
     font-size: 25px;
-    margin: 0px 15px;
 }
 .content{
     width: 60%;
